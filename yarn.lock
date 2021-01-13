@@ -3800,6 +3800,14 @@
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
 
+"@types/webpackbar@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@types/webpackbar/-/webpackbar-4.0.0.tgz#6e18147d03c9d51e1bbfbfa2c36374e12c430f0d"
+  integrity sha512-EZ16TWfcaFjU1Y84r8d6dNdZmBymFVLHz7w2/6ppTX27bUEY+LpAkTojgP50YXPIsnKgun8wJ5YSnkzru6fbqw==
+  dependencies:
+    "@types/node" "*"
+    "@types/webpack" "*"
+
 "@types/yargs-parser@*":
   version "15.0.0"
   resolved "https://registry.yarnpkg.com/@types/yargs-parser/-/yargs-parser-15.0.0.tgz#cb3f9f741869e20cce330ffbeb9271590483882d"

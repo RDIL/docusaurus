@@ -4,15 +4,16 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
-const WebpackBar = require('webpackbar');
-const formatWebpackMessages = require('react-dev-utils/formatWebpackMessages');
+import webpack from 'webpack';
+import WebpackBar from 'webpackbar';
+import formatWebpackMessages from 'react-dev-utils/formatWebpackMessages';
 
-function showError(arr) {
+function showError(arr: string[]): void {
   console.log(`\n\n${arr.join('')}`);
 }
 
 class LogPlugin extends WebpackBar {
-  apply(compiler) {
+  apply(compiler: webpack.Compiler): void {
     super.apply(compiler);
 
     compiler.hooks.done.tap('WebpackNiceLog', (stats) => {
@@ -28,4 +29,4 @@ class LogPlugin extends WebpackBar {
   }
 }
 
-module.exports = LogPlugin;
+export default LogPlugin;
